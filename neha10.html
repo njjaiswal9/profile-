@@ -1,0 +1,110 @@
+
+<html>
+<head>
+<title>Form</title>
+<style>
+
+input[type=text]{
+width:15%;
+padding:10px;
+margin:0px;
+box-sizing:border-box;
+border-radius:10px;
+border:none;
+border-bottom:2px solid rgb(174, 140, 140);
+background-image:url(' ');
+}
+textarea{}
+select{
+ width:10px;
+ padding:10px;
+ margin:8px;
+ box-sizing:border-box;
+ border-radius:px;
+ border:none;
+ border-bottom:2px solid rgb(179, 130, 130);
+ }
+
+
+ body {
+    text-align: center;
+    background-color: #817474;
+}
+div{background-color:rgb(192, 156, 162);width:700px;height:600px;margin:auto;}
+
+
+p{
+color:white;
+font-weight:bold;
+padding-top:20px;}
+
+</style>
+</head>
+<body>
+<form action="/action.php">
+<h1 style="color:rgb(234, 180, 180);text-decoration:underline";>Students Details</h1>
+<div style="color:rgb(26, 26, 97)";>Basic Forms
+<div class="mydiv">
+<ul>
+<li style="color:rgb(197, 123, 123);text-align:left;"><p style="color:red;text-align:left;">Fill all information correctly.
+</p></li>
+</ul>
+<form style="text-align:left;padding-left:20px;">
+<label for="fname">First Name: </label>
+<input type="text" required id="fname" name="fname"/>
+<br><br>
+<label for="Iname">Last Name:</label>
+<input type="text" id="Iname" name="Iname">
+<br><br>
+<label for="Iname">Mobile No.:</label>
+<input type="text" id="Iname" name="Iname">
+
+<br><br>
+<label for="fname">Email: </label>
+<input type="text" id="fname" name="fname">
+<br><br>
+<h4 style="color:rgb(106, 106, 169);text-align:centre";>Gender:</h4>
+<input type="radio" id="Female" name="favsubject" value="Female">
+<label for="Female">Female</label>
+
+<input type="radio" id="Male" name="favsubject" value="Male">
+<label for="Male">Male</label>
+
+<input type="radio" id="Other" name="favsubject" value="Other">
+<label for="Other">Other</label>
+
+
+<h3>Education completed:</h3>
+<input type="checkbox" id="High School" name="favsubject" value="High School">
+<label for="High School">High School</label>
+
+<input type="checkbox" id="Intermediate" name="favsubject" value="Intermediate">
+<label for="Intermediate">Intermediate</label><br><br>
+<input type="checkbox" id="Bachelor's Degree" name="favsubject" value="Bachelor's Degree">
+<label for="Bachelor's Degree">Bachelor's Degree</label>
+
+<input type="checkbox" id="Master's Degree" name="favsubject" value="Master's Degree">
+<label for="Master's Degree">Master's Degree</label>
+<br><br>
+
+<div class="form_group">
+<label for="like_tea">Do you like tea?</label>
+<select id="like_tea"
+name="like_tea" required>
+<option value="Select id="like_tea" name="like_tea" required>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+<option value="Sometimes">Sometimes</option>
+</select>
+<br><br>
+
+<button style="color:#767078;backgrond-color:#d4ebb0";>Submit</button>
+
+<button style="color:#514c53;backgrond-color:#d4ebb0";>Reset</button>
+</div>
+</form>
+
+</body>
+</body>
+</head>
+
