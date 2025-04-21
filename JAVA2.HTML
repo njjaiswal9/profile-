@@ -1,0 +1,81 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>JavaScript Mixed Functions</title>
+    </head>
+    <body style="background-color: #f0f8ff; font-family: Arial, sans-serif; padding: 20px;">
+    
+      <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 15px; background-color: #ffffff; border-radius: 8px;">
+        <!-- 1. Function to filter out negative numbers -->
+        <script>
+          function filterNegativeNumbers(arr) {
+            return arr.filter(num => num >= 0);
+          }
+          const numbers = [-5, 10, -3, 8, 0];
+          const filteredNumbers = filterNegativeNumbers(numbers);
+          document.write(`<b>Filtered Numbers:</b> ${filteredNumbers.join(", ")}<br><br>`);
+        </script>
+      </div>
+    
+      <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 15px; background-color: #ffffff; border-radius: 8px;">
+        <!-- 2. Get difference between a number and 13 -->
+        <script>
+          function getDifference(num) {
+            return num > 13 ? 2 * Math.abs(num - 13) : 13 - num;
+          }
+          const difference = getDifference(18);
+          document.write(`<b>Difference:</b> ${difference}<br><br>`);
+        </script>
+      </div>
+    
+      <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 15px; background-color: #ffffff; border-radius: 8px;">
+        <!-- 3. Fibonacci series -->
+        <script>
+          function fibonacciSeries(n) {
+            const series = [0, 1];
+            for (let i = 2; i < n; i++) {
+              series.push(series[i - 1] + series[i - 2]);
+            }
+            return series;
+          }
+          const fib = fibonacciSeries(10);
+          document.write(`<b>Fibonacci Series:</b> ${fib.join(", ")}<br><br>`);
+        </script>
+      </div>
+    
+      <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 15px; background-color: #ffffff; border-radius: 8px;">
+        <!-- 4. Sum of multiples of 3 and 5 under 1000 -->
+        <script>
+          function sumOfMultiples(limit) {
+            let sum = 0;
+            for (let i = 1; i < limit; i++) {
+              if (i % 3 === 0 || i % 5 === 0) {
+                sum += i;
+              }
+            }
+            return sum;
+          }
+          const totalSum = sumOfMultiples(1000);
+          document.write(`<b>Sum of Multiples of 3 and 5:</b> ${totalSum}<br><br>`);
+        </script>
+      </div>
+    
+      <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 15px; background-color: #ffffff; border-radius: 8px;">
+        <!-- 5. Cube of a number using function object -->
+        <script>
+          function Cube(num) {
+            this.number = num;
+            this.calculateCube = function () {
+              return this.number ** 3;
+            };
+          }
+          const cubeObj = new Cube(5);
+          document.write(`<b>Cube:</b> ${cubeObj.calculateCube()}<br><br>`);
+        </script>
+      </div>
+    </body>
+    </html>
+    
