@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>:
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array Programs</title>
+    <style>
+        body {
+            background-color: #f0f8ff; /* Light blue background */
+        }
+        div {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>1. Sort an Array</h2>
+        <script>
+            let arrayToSort = [5, 2, 8, 1, 3];
+            arrayToSort.sort((a, b) => a - b); // Sorting in ascending order
+            document.write("Sorted Array: " + arrayToSort.join(", ") + "<br>");
+        </script>
+    </div>
+
+    <div>
+        <h2>2. Concatenate Two Arrays</h2>
+        <script>
+            let array1 = [1, 2, 3];
+            let array2 = [4, 5, 6];
+            let concatenatedArray = array1.concat(array2);
+            document.write("Concatenated Array: " + concatenatedArray.join(", ") + "<br>");
+        </script>
+    </div>
+
+    <div>
+        <h2>3. Remove First Element</h2>
+        <script>
+            let arrayToModify = ["apple", "banana", "cherry"];
+            arrayToModify.shift(); // Remove the first element
+            document.write("Modified Array (First Element Removed): " + arrayToModify.join(", ") + "<br>");
+        </script>
+    </div>
+</body>
+</html>
+
+
