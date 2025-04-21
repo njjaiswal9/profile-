@@ -1,0 +1,61 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>JavaScript Mixed Code</title>
+    </head>
+    <body style="background-color: #f5f5dc; font-family: Arial, sans-serif; padding: 20px;">
+      <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 15px; background-color: #fff; border-radius: 8px;">
+        <!-- 1. Program to print your name and address -->
+        <script>
+          const name = "Your Name";
+          const address = "Your Address";
+          document.write(`<b>Name:</b> ${name}<br><b>Address:</b> ${address}<br><br>`);
+        </script>
+      </div>
+    
+      <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 15px; background-color: #fff; border-radius: 8px;">
+        <!-- 2. Check whether value and data-type of two variables are the same -->
+        <script>
+          const var1 = 100;
+          const var2 = "100";
+          const areSame = var1 === var2; // Strict comparison
+          document.write(`<b>Are value and type the same?</b> ${areSame}<br><br>`);
+        </script>
+      </div>
+    
+      <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 15px; background-color: #fff; border-radius: 8px;">
+        <!-- 3. Add two strings and return them with all letters capitalized -->
+        <script>
+          const string1 = "Hello";
+          const string2 = "World";
+          const concatenatedString = (string1 + string2).toUpperCase();
+          document.write(`<b>Concatenated String:</b> ${concatenatedString}<br><br>`);
+        </script>
+      </div>
+    
+      <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 15px; background-color: #fff; border-radius: 8px;">
+        <!-- 4. Convert the length of a string in bytes -->
+        <script>
+          const inputString = "SampleText";
+          const byteLength = new Blob([inputString]).size;
+          document.write(`<b>String Length in Bytes:</b> ${byteLength}<br><br>`);
+        </script>
+      </div>
+    
+      <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 15px; background-color: #fff; border-radius: 8px;">
+        <!-- 5. Round a number to specified digits -->
+        <script>
+          const numberToRound = 123.456789;
+          const digits = 3; // Specify desired precision
+          const roundedNumber = Number(numberToRound.toFixed(digits));
+          document.write(`<b>Rounded Number (${digits} digits):</b> ${roundedNumber}<br><br>`);
+        </script>
+      </div>
+    </body>
+    </html>
+    
+   
+    
+    
