@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive JavaScript Features</title>
+</head>
+<body style="background-color: #dbcece; font-family: Arial, sans-serif; padding: 20px;">
+
+  <!-- 1. Basic Information Form -->
+  <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 15px; background-color: #f8e6e6; border-radius: 8px;">
+    <h3>Basic Information Form</h3>
+    <form id="infoForm">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name"><br><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email"><br><br>
+      <button type="button" onclick="displayFormData()">Submit</button>
+    </form>
+    <div id="formDataDisplay"></div>
+    <script>
+      function displayFormData() {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        document.getElementById("formDataDisplay").innerHTML = `<b>Name:</b> ${name}<br><b>Email:</b> ${email}<br><br>`;
+      }
+    </script>
+  </div>
+
+  <!-- 2. Change Image on Button Click -->
+  <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 15px; background-color: #cfc2c2; border-radius: 8px;">
+    <h3>Change Image</h3>
+    <img id="imageDisplay" src="nature.jpeg" alt="Placeholder Image">
+    <br><br>
+    <button onclick="changeImage()">Change Image</button>
+    <script>
+      function changeImage() {
+        document.getElementById("imageDisplay").src = "trees.jpeg";
+      }
+    </script>
+  </div>
+
+  <!-- 3. Increase and Decrease Font Size -->
+  <div style="border: 1px solid #d3caca; padding: 15px; margin-bottom: 15px; background-color: #e7dede; border-radius: 8px;">
+    <h3>Font Size Control</h3>
+    <p id="text">This is a sample text.</p>
+    <button onclick="increaseFont()">Increase Font Size</button>
+    <button onclick="decreaseFont()">Decrease Font Size</button>
+    <script>
+      function increaseFont() {
+        const text = document.getElementById("text");
+        const currentSize = parseFloat(window.getComputedStyle(text).fontSize);
+        text.style.fontSize = `${currentSize + 2}px`;
+      }
+      function decreaseFont() {
+        const text = document.getElementById("text");
+        const currentSize = parseFloat(window.getComputedStyle(text).fontSize);
+        text.style.fontSize = `${currentSize - 2}px`;
+      }
+    </script>
+  </div>
+
+  <!-- 4. Show Current Date & Time -->
+  <div style="border: 1px solid #e0c6c6; padding: 15px; margin-bottom: 15px; background-color: #e7d7d7; border-radius: 8px;">
+    <h3>Current Date & Time</h3>
+    <button onclick="showDateTime()">Show Date & Time</button>
+    <div id="dateTimeDisplay"></div>
+    <script>
+      function showDateTime() {
+        const currentDateTime = new Date();
+        document.getElementById("dateTimeDisplay").innerHTML = `<b>Current Date & Time:</b> ${currentDateTime}<br><br>`;
+      }
+    </script>
+  </div>
+
+</body>
+</html>
