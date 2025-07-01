@@ -1,63 +1,55 @@
 <html>
 <head>
-    <title>Division Class</title>
-	<style>
-	 body {
-    text-align: center;
-    background-color: #f4f4f4;
-}
-
-.box {
-    width: 300px;
-    height: 200px;
-    margin: 10px auto;
-    color: white;
-   font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-
-}
-
-
-.box1 {
-    background-color: #032943; 
-}
-
-
-.box2 {
-    background-color: #6b5b5a;
-    width: 80%;
-    height: 80%;
-}
-
-.box3 {
-    background-color: #79a08a;
-    width: 70%;
-    height: 70%;
-}
-
-
-.box4 {
-    background-color: #9f6c1b;
-    width: 60%;
-    height: 60%;
-}
-	</style>
-    <link rel="stylesheet" href="styles.css">
+   
+    <title>My Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color:rgb(220, 202, 205);
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+        .box {
+            width: 100px;
+            text-align: center;
+            padding: 20px;
+            background:#56807e;
+            border-radius: 10px;
+        }
+        .box img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1 style="color:rgb(72, 49, 72);text-decoration:underline";>Division Class</h1>
-    <div class="box box1">
-        HTML
-        CSS
-        <div class="box box2">
-            JAVA
-            <div class="box box3">
-               NODE JS
-                <div class="box box4">PHP</div>
-            </div>
+    <div class="container">
+        <div class="box">
+            <img src="homeicon.png" alt="Home">
+            <h3>Home</h3>
+        </div>
+        <div class="box">
+            <img src="abouticon.jpeg" alt="About">
+            <h3>About</h3>
+        </div>
+        <div class="box">
+            <img src="galleryicons.png" alt="Gallery">
+            <h3>Gallery</h3>
+        </div>
+        <div class="box">
+            <img src="contact icon.png" alt="Contact">
+            <h3>Contact</h3>
         </div>
     </div>
 </body>
